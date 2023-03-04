@@ -64,13 +64,13 @@ nav a:hover {
 
 #left_nav {
   background-color: #999999;
-  width: 15%;
+  width: 20vh;
   height: 80%;
   float: left;
 }
 
 #left_nav ul {
-  padding: 10%;
+  padding: 1%;
   margin: 0px;
 }
 
