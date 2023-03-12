@@ -6,6 +6,8 @@ body {
 }
 
 header {
+  position: absolute;
+  top: 0;
   color: white;
   height: 120px;
   width: 100%;
@@ -20,6 +22,8 @@ header h1 {
 }
 
 nav {
+  position: absolute;
+  top: 120px;
   background-color: #444444;
   text-align: center;
   width: 100%;
@@ -31,7 +35,7 @@ nav li {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 0 10px 0px 10px;
   list-style-type: none;
 }
 nav ul {
@@ -39,9 +43,13 @@ nav ul {
   margin: 0px;
 }
 
-nav a {
+nav a:link {
   color: white;
   text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
 }
 
 nav a:hover {
@@ -49,12 +57,16 @@ nav a:hover {
 }
 
 #wrapper {
-
+  position: absolute;
+  top: 175px;
+  bottom: 60px;
   width: 100%;
 }
 
 #content {
-  margin: 20px;
+  overflow: auto;
+  margin: 0 20px 0 20px;
+  height: 100%;
 }
 
 #left_nav {
@@ -78,11 +90,14 @@ nav a:hover {
   list-style-type: none;
 }
 
-#left_nav a {
+#left_nav a:link {
   color: white;
   text-decoration: none;
 }
 
+#left_nav a:visited {
+  color: white;
+}
 
 #left_nav a:hover {
   color: red;
@@ -90,7 +105,8 @@ nav a:hover {
 
 #content_left {
   overflow: auto;
-  margin: 0px 20px 20px 190px;
+  height: 100%;
+  margin: 0px 0px 0px 190px;
 }
 
 footer {
